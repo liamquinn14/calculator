@@ -4,10 +4,20 @@ let calcArray
 let calc
 
 let concat = (buttonNum) => {
+if (calcString.includes("-") || calcString.includes("+") || calcString.includes("/") || calcString.includes("*")) {
+    if (buttonNum === "-" || buttonNum === "+" || buttonNum === "/" || buttonNum === "*") {
+        display.innerText = findCalc(calcString) + buttonNum
+        calcString = display.innerText
+    } else {
     calcString += buttonNum
     display.innerText = calcString
+    }
+} else {
+    calcString += buttonNum
+    display.innerText = calcString
+    }
 }
-
+    
 let findCalc = (calcString) => {
 if (calcString.includes("-")) {
     calcArray = calcString.split("-")
@@ -33,3 +43,4 @@ let displayAnswer = (calc) => {
     calcString = ""
     calcString += calc
 }
+
