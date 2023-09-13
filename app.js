@@ -44,3 +44,7 @@ let displayAnswer = (calc) => {
     calcString += calc
 }
 
+let reset = () => {
+    calcString = ""
+    display.innerText = 0
+}
