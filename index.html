@@ -7,27 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1> Calculator </h1>
-    <h2 id="display"> 0 </h2>
+    <h1> Liam's Calculator </h1>
+    <div class="calc-shape">
+    <div id="display"> 0
+    </div>
     <div class="buttons-style"> 
-    <button onclick="concat(1)"> 1 </button>
-    <button onclick="concat(2)"> 2 </button>
-    <button onclick="concat(3)"> 3 </button>
-    <button onclick="concat(4)"> 4 </button>
-    <button onclick="concat(5)"> 5 </button>
-    <button onclick="concat(6)"> 6 </button>
-    <button onclick="concat(7)"> 7 </button>
-    <button onclick="concat(8)"> 8 </button>
-    <button onclick="concat(9)"> 9 </button>
-    <button onclick="concat(0)"> 0 </button>
-
-    <button onclick="concat('-')"> - </button>
+    <button id="numbers" onclick="concat(7)"> 7 </button>
+    <button id="numbers" onclick="concat(8)"> 8 </button>
+    <button id="numbers" onclick="concat(9)"> 9 </button>
     <button onclick="concat('+')"> + </button>
+    <button id="numbers" onclick="concat(4)"> 4 </button>
+    <button id="numbers" onclick="concat(5)"> 5 </button>
+    <button id="numbers" onclick="concat(6)"> 6 </button>
+    <button onclick="concat('-')"> - </button>
+    <button id="numbers" onclick="concat(1)"> 1 </button>
+    <button id="numbers" onclick="concat(2)"> 2 </button>
+    <button id="numbers" onclick="concat(3)"> 3 </button>
     <button onclick="concat('/')"> / </button>
-    <button onclick="concat('*')"> * </button>
-
-    <button onclick="findCalc(calcString); displayAnswer(calc)"> = </button>
     <button onclick="reset()"> AC </button>
+    <button id="numbers" onclick="concat(0)"> 0 </button>
+    <button onclick="findCalc(calcString); displayAnswer(calc)"> = </button>
+    <button onclick="concat('*')"> * </button>
+    </div>
     </div>
     <script src="app.js"> </script> 
 </body>
