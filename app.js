@@ -22,18 +22,22 @@ let findCalc = (calcString) => {
 if (calcString.includes("-")) {
     calcArray = calcString.split("-")
     calc = Number(calcArray[0]) - Number(calcArray[1])
+    calc = calc.toFixed(6)
     return calc
 } else if (calcString.includes("+")) {
     calcArray = calcString.split("+")
     calc = Number(calcArray[0]) + Number(calcArray[1])
+    calc = calc.toFixed(6)
     return calc
 } else if (calcString.includes("/")) {
     calcArray = calcString.split("/")
     calc = Number(calcArray[0]) / Number(calcArray[1])
+    calc = calc.toFixed(6)
     return calc
 } else if (calcString.includes("*")) {
     calcArray = calcString.split("*")
     calc = Number(calcArray[0]) * Number(calcArray[1])
+    calc = calc.toFixed(6)
     return calc
     }
 }
