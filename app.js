@@ -34,11 +34,7 @@ let concat = (buttonNum) => {
 }
     
 let findCalc = (calcString) => {
-if (calcString.includes("-")) {
-    calcArray = calcString.split("-")
-    calc = Number(calcArray[0]) - Number(calcArray[1])
-    return calc
-} else if (calcString.includes("+")) {
+if (calcString.includes("+")) {
     calcArray = calcString.split("+")
     calc = Number(calcArray[0]) + Number(calcArray[1])
     return calc
@@ -50,7 +46,17 @@ if (calcString.includes("-")) {
     calcArray = calcString.split("*")
     calc = Number(calcArray[0]) * Number(calcArray[1])
     return calc
+} else if (calcString.includes("-")) {
+    if (calcString.split("-").length > 2) {
+        calcArray = calcString.split("-")
+        calc = - Number(calcArray[1]) - Number(calcArray[2])
+        return calc
+    } else {
+        calcArray = calcString.split("-")
+        calc = Number(calcArray[0]) - Number(calcArray[1])
+        return calc
     }
+}
 }
 
 let displayAnswer = (calc) => {
