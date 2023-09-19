@@ -12,22 +12,22 @@
     <div id="display"> 0
     </div>
     <div class="buttons-style"> 
-    <button id="numbers" onclick="concat(7)"> 7 </button>
-    <button id="numbers" onclick="concat(8)"> 8 </button>
-    <button id="numbers" onclick="concat(9)"> 9 </button>
-    <button onclick="concat('+')"> + </button>
-    <button id="numbers" onclick="concat(4)"> 4 </button>
-    <button id="numbers" onclick="concat(5)"> 5 </button>
-    <button id="numbers" onclick="concat(6)"> 6 </button>
-    <button onclick="concat('-')"> - </button>
-    <button id="numbers" onclick="concat(1)"> 1 </button>
-    <button id="numbers" onclick="concat(2)"> 2 </button>
-    <button id="numbers" onclick="concat(3)"> 3 </button>
-    <button onclick="concat('/')"> / </button>
-    <button onclick="reset()"> AC </button>
-    <button id="numbers" onclick="concat(0)"> 0 </button>
-    <button onclick="findCalc(calcString); displayAnswer(calc)"> = </button>
-    <button onclick="concat('*')"> * </button>
+    <button id="numbers" onclick="concat(7); makeFalse()"> 7 </button>
+    <button id="numbers" onclick="concat(8); makeFalse()"> 8 </button>
+    <button id="numbers" onclick="concat(9); makeFalse()"> 9 </button>
+    <button onclick="concat('+'); makeFalse()"> + </button>
+    <button id="numbers" onclick="concat(4); makeFalse()"> 4 </button>
+    <button id="numbers" onclick="concat(5); makeFalse()"> 5 </button>
+    <button id="numbers" onclick="concat(6); makeFalse()"> 6 </button>
+    <button onclick="concat('-'); makeFalse()"> - </button>
+    <button id="numbers" onclick="concat(1); makeFalse()"> 1 </button>
+    <button id="numbers" onclick="concat(2); makeFalse()"> 2 </button>
+    <button id="numbers" onclick="concat(3); makeFalse()"> 3 </button>
+    <button onclick="concat('/'); makeFalse()"> / </button>
+    <button onclick="reset(); makeFalse()"> AC </button>
+    <button id="numbers" onclick="concat(0); makeFalse()"> 0 </button>
+    <button onclick="findCalc(calcString); displayAnswer(calc); makeTrue()"> = </button>
+    <button onclick="concat('*'); makeFalse()"> * </button>
     </div>
     </div>
     <script src="app.js"> </script> 
