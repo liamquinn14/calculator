@@ -24,8 +24,8 @@ let concat = (buttonNum) => {
         display.innerText = findCalc(calcString) + buttonNum
         calcString = display.innerText
     } else {
-    calcString += buttonNum
-    display.innerText = calcString
+        calcString += buttonNum
+        display.innerText = calcString
     }
 } else {
     calcString += buttonNum
@@ -48,8 +48,8 @@ if (calcString.includes("+")) {
     return calc
 } else if (calcString.includes("-")) {
     if (calcString.split("-").length > 2) {
-        calcArray = calcString.split("-")
-        calc = - Number(calcArray[1]) - Number(calcArray[2])
+        calcArray = [calcString.split("-")[1], calcString.split("-")[2]]
+        calc = - Number(calcArray[0]) - Number(calcArray[1])
         return calc
     } else {
         calcArray = calcString.split("-")
