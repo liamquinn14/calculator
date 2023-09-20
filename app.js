@@ -34,26 +34,49 @@ let concat = (buttonNum) => {
 }
     
 let findCalc = (calcString) => {
-if (calcString.includes("+")) {
+    if (calcString.includes("/0")) {
+        calc = 69
+        return "69"
+} else if (calcString.includes("+")) {
     calcArray = calcString.split("+")
     calc = Number(calcArray[0]) + Number(calcArray[1])
+    if (calc.toString().length > calc.toFixed(4).length) {
+        calc = calc.toFixed(4)
+        return calc
+    }
     return calc
 } else if (calcString.includes("/")) {
     calcArray = calcString.split("/")
     calc = Number(calcArray[0]) / Number(calcArray[1])
+    if (calc.toString().length > calc.toFixed(4).length) {
+        calc = calc.toFixed(4)
+        return calc
+    }
     return calc
 } else if (calcString.includes("*")) {
     calcArray = calcString.split("*")
     calc = Number(calcArray[0]) * Number(calcArray[1])
+    if (calc.toString().length > calc.toFixed(4).length) {
+        calc = calc.toFixed(4)
+        return calc
+    }
     return calc
 } else if (calcString.includes("-")) {
     if (calcString.split("-").length > 2) {
         calcArray = [calcString.split("-")[1], calcString.split("-")[2]]
         calc = - Number(calcArray[0]) - Number(calcArray[1])
+        if (calc.toString().length > calc.toFixed(4).length) {
+            calc = calc.toFixed(4)
+            return calc
+        }
         return calc
     } else {
         calcArray = calcString.split("-")
         calc = Number(calcArray[0]) - Number(calcArray[1])
+        if (calc.toString().length > calc.toFixed(4).length) {
+            calc = calc.toFixed(4)
+            return calc
+        }
         return calc
     }
 }
