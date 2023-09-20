@@ -48,7 +48,7 @@ let findCalc = (calcString) => {
 } else if (calcString.includes("/")) {
     calcArray = calcString.split("/")
     calc = Number(calcArray[0]) / Number(calcArray[1])
-    if (calc.toString(ss).length > calc.toFixed(4).length) {
+    if (calc.toString().length > calc.toFixed(4).length) {
         calc = calc.toFixed(4)
         return calc
     }
