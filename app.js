@@ -36,7 +36,7 @@ let concat = (buttonNum) => {
 let findCalc = (calcString) => {
     if (calcString.includes("/0")) {
         calc = 69
-        return "69"
+        return calc
 } else if (calcString.includes("+")) {
     calcArray = calcString.split("+")
     calc = Number(calcArray[0]) + Number(calcArray[1])
@@ -48,7 +48,7 @@ let findCalc = (calcString) => {
 } else if (calcString.includes("/")) {
     calcArray = calcString.split("/")
     calc = Number(calcArray[0]) / Number(calcArray[1])
-    if (calc.toString().length > calc.toFixed(4).length) {
+    if (calc.toString(ss).length > calc.toFixed(4).length) {
         calc = calc.toFixed(4)
         return calc
     }
