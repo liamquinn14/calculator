@@ -8,26 +8,28 @@
 </head>
 <body>
     <h1> Liam's Calculator </h1>
+    <h4 id="characters-remaining"> 12 characters remaining </h4>
     <div class="calc-shape">
     <div id="display"> 0
     </div>
     <div class="buttons-style"> 
-    <button id="numbers" onclick="concat(7); makeFalse()"> 7 </button>
-    <button id="numbers" onclick="concat(8); makeFalse()"> 8 </button>
-    <button id="numbers" onclick="concat(9); makeFalse()"> 9 </button>
-    <button onclick="concat('+'); makeFalse()"> + </button>
-    <button id="numbers" onclick="concat(4); makeFalse()"> 4 </button>
-    <button id="numbers" onclick="concat(5); makeFalse()"> 5 </button>
-    <button id="numbers" onclick="concat(6); makeFalse()"> 6 </button>
-    <button onclick="concat('-'); makeFalse()"> - </button>
-    <button id="numbers" onclick="concat(1); makeFalse()"> 1 </button>
-    <button id="numbers" onclick="concat(2); makeFalse()"> 2 </button>
-    <button id="numbers" onclick="concat(3); makeFalse()"> 3 </button>
-    <button onclick="concat('/'); makeFalse()"> / </button>
-    <button onclick="reset(); makeFalse()"> AC </button>
-    <button id="numbers" onclick="concat(0); makeFalse()"> 0 </button>
-    <button onclick="findCalc(calcString); displayAnswer(calc); makeTrue()"> = </button>
-    <button onclick="concat('*'); makeFalse()"> * </button>
+    <button id="numbers" onclick="concat(7); makeFalse(); genCharactersRemaining(calcString)"> 7 </button>
+    <button id="numbers" onclick="concat(8); makeFalse(); genCharactersRemaining(calcString)"> 8 </button>
+    <button id="numbers" onclick="concat(9); makeFalse(); genCharactersRemaining(calcString)"> 9 </button>
+    <button onclick="concat('+'); makeFalse(); genCharactersRemaining(calcString)"> + </button>
+    <button id="numbers" onclick="concat(4); makeFalse(); genCharactersRemaining(calcString)"> 4 </button>
+    <button id="numbers" onclick="concat(5); makeFalse(); genCharactersRemaining(calcString)"> 5 </button>
+    <button id="numbers" onclick="concat(6); makeFalse(); genCharactersRemaining(calcString)"> 6 </button>
+    <button onclick="concat('-'); makeFalse(); genCharactersRemaining(calcString)"> - </button>
+    <button id="numbers" onclick="concat(1); makeFalse(); genCharactersRemaining(calcString)"> 1 </button>
+    <button id="numbers" onclick="concat(2); makeFalse(); genCharactersRemaining(calcString)"> 2 </button>
+    <button id="numbers" onclick="concat(3); makeFalse(); genCharactersRemaining(calcString)"> 3 </button>
+    <button onclick="concat('/'); makeFalse(); genCharactersRemaining(calcString)"> / </button>
+    <button onclick="reset(); makeFalse(); genCharactersRemaining(calcString)"> AC </button>
+    <button id="numbers" onclick="concat(0); makeFalse(); genCharactersRemaining(calcString)"> 0 </button>
+    <button onclick="concat('.'); makeFalse(); genCharactersRemaining(calcString)"> . </button>
+    <button onclick="concat('*'); makeFalse(); genCharactersRemaining(calcString)"> * </button>
+    <button onclick="findCalc(calcString); displayAnswer(calc); makeTrue(); genCharactersRemaining(calcString)"> = </button>
     </div>
     </div>
     <script src="app.js"> </script> 

@@ -1,3 +1,4 @@
+
 let display = document.getElementById("display")
 let calcString = ""
 let calcArray
@@ -13,6 +14,7 @@ let makeFalse = () => {
 }
 
 let concat = (buttonNum) => {
+if (calcString.length < 12) {
     if (answered === true && buttonNum === "-" || answered === true && buttonNum === "+" || answered === true && buttonNum === "/" || answered === true && buttonNum === "*") {
         calcString = calcString + buttonNum
         display.innerText = calcString
@@ -32,9 +34,10 @@ let concat = (buttonNum) => {
     display.innerText = calcString
     }
 }
+}
     
 let findCalc = (calcString) => {
-    if (calcString.includes("/0")) {
+    if (calcString.endsWith("/0")) {
         calc = 69
         return calc
 } else if (calcString.includes("+")) {
@@ -91,4 +94,10 @@ let displayAnswer = (calc) => {
 let reset = () => {
     calcString = ""
     display.innerText = 0
+}
+
+let charactersRemaining = document.getElementById("characters-remaining")
+
+let genCharactersRemaining = (calcString) => {
+    return charactersRemaining.innerText = (12 - calcString.length) + " characters remaining"
 }

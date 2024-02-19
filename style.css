@@ -1,5 +1,5 @@
 * {
-    background-color: rgb(215, 179, 246);
+    background-color: rgb(190, 142, 252);
     text-align: center;
 }
 
@@ -17,7 +17,6 @@ h1 {
     margin: auto;
     justify-content: center;
     flex-wrap: wrap;
-    border: 1px solid black;
 }
 
 button {
@@ -31,6 +30,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 60px;
 }
 
 #display {
@@ -59,4 +59,8 @@ button:hover {
 
 #numbers:hover {
     background-color: rgb(40, 39, 39);
+}
+
+#characters-remaining {
+    font-size: 20px;
 }
